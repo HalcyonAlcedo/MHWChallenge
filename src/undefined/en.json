@@ -1,0 +1,57 @@
+{
+  "Hero": {
+    "heading": "Secret territory challenge",
+    "subheading": "Monster Hunter world module",
+    "body": "Welcome to download the preemptive experience version",
+    "download": "Download module"
+  },
+  "User": {
+    "title": "Player information",
+    "storey": "Highest of layers",
+    "challengeCount": "Number of challenges",
+    "death": "Number of deaths",
+    "login": "login",
+    "logout": "logout",
+    "vacban": "The current account has been blocked by the anti cheating system.",
+    "points": "Current points",
+    "layer": "Challenging layer {layer}"
+  },
+  "SocialMedia": {
+    "heading": "Preemptive experience description",
+    "content": "During the preemptive experience phase, the module will be updated frequently, which may cause the loss of ladder data. After the preemptive experience, all data will be deleted. If you have any questions or suggestions in the experience stage, you are welcome to post on the mushroom forum. At present, the anti cheating function will check the cheating software. Please don't run the game with the cheating software. The mod file will be checked after the official version goes online. At present, the ladder list is for reference only."
+  },
+  "Ranking": {
+    "title": "S1 season little secret land ladder list",
+    "Greattitle": "S1 season secret land ladder list",
+    "subtitle": "Due to the randomness of monster refresh in the magic gathering place, the heaven ladder list in the little secret place is only for reference and does not represent the player's real level.",
+    "headers": {
+      "player": "Player",
+      "record": "Pass time",
+      "death": "Deaths",
+      "weapon": "Weapons",
+      "clearance": "Clearance",
+      "time": "Time"
+    },
+    "RankingContent": {
+      "caimogu": "Caimogu user",
+      "steam": "Steam user"
+    },
+    "Weapon": {
+      "wp_0": "Big sword",
+      "wp_1": "Slice hand sword",
+      "wp_2": "Double swords",
+      "wp_3": "Katana",
+      "wp_4": "Sledgehammer",
+      "wp_5": "Hunting flute",
+      "wp_6": "Long gun",
+      "wp_7": "Gunlance",
+      "wp_8": "Chopping axe",
+      "wp_9": "Shield axe",
+      "wp_10": "Worm stick",
+      "wp_11": "Bow",
+      "wp_12": "Heavy crossbow",
+      "wp_13": "Light crossbow",
+      "wp_err": "Abnormal weapon data"
+    }
+  }
+}

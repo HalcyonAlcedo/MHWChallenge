@@ -1,0 +1,72 @@
+{
+  "Hero": {
+    "heading": "秘境挑战",
+    "subheading": "怪物猎人世界大MOD",
+    "body": "欢迎下载抢先体验版",
+    "download": "下载Mod"
+  },
+  "User": {
+    "title": "玩家信息",
+    "storey": "最高层数",
+    "challengeCount": "挑战次数",
+    "death": "死亡次数",
+    "login": "登陆",
+    "logout": "登出",
+    "vacban": "当前账号已被反作弊系统封禁。",
+    "points": "当前积分",
+    "layer": "正在挑战第{layer}层"
+  },
+  "SocialMedia": {
+    "heading": "抢先体验说明",
+    "content": "抢先体验阶段Mod会频繁更新，期间可能会造成天梯数据丢失，抢先体验结束后会删除全部数据。如果在体验阶段有什么问题或建议，欢迎在踩蘑菇论坛发帖指出。目前反作弊功能会检查作弊软件，请不要开着作弊软件运行游戏，正式版上线后会检查Mod文件，目前天梯榜仅供参考。"
+  },
+  "Ranking": {
+    "title": "S1赛季小秘境天梯榜",
+    "Greattitle": "S1赛季大秘境天梯榜",
+    "subtitle": "由于聚魔之地怪物刷新的随机性,小秘境天梯榜仅作参考,不代表玩家真实水平.",
+    "headers": {
+      "player": "玩家",
+      "record": "通过用时",
+      "death": "猫车次数",
+      "weapon": "使用武器",
+      "clearance": "层数",
+      "time": "通过时间"
+    },
+    "RankingContent": {
+      "caimogu": "踩蘑菇用户",
+      "steam": "Steam用户"
+    }
+  },
+  "OnlyPlayer": {
+    "title": "在线玩家",
+    "headers": {
+      "player": "玩家",
+      "weapon": "使用武器",
+      "clearance": "层数",
+      "assembly": "集会所"
+    }
+  },
+  "Message": {
+    "title": "聊天室",
+    "Message": "消息"
+  },
+  "General": {
+    "Weapon": {
+      "wp_0": "大剑",
+      "wp_1": "片手剑",
+      "wp_2": "双剑",
+      "wp_3": "太刀",
+      "wp_4": "大锤",
+      "wp_5": "狩猎笛",
+      "wp_6": "长枪",
+      "wp_7": "铳枪",
+      "wp_8": "斩斧",
+      "wp_9": "盾斧",
+      "wp_10": "操虫棍",
+      "wp_11": "弓",
+      "wp_12": "重弩炮",
+      "wp_13": "轻弩炮",
+      "wp_err": "武器数据异常"
+    }
+  }
+}
