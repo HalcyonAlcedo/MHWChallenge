@@ -20,7 +20,7 @@ const mutations = {
   SOCKET_RECONNECT_ERROR,
 }
 
-Vue.use(VueNativeSock, 'ws://39.106.150.173:8126/Api', {
+Vue.use(VueNativeSock, 'wss://api.alcedo.top:8128/Api', {
   store: store,
   mutations: mutations,
   format: 'json',
