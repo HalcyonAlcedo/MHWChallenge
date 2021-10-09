@@ -3,7 +3,7 @@ module.exports = {
     disableHostCheck: true,
     proxy: { // 配置跨域
       '/api': {
-        target: 'http://localhost:3000/api/web',
+        target: 'http://challenge.alcedo.top/apiv2/web',
         changOrigin: true,
         pathRewrite: {
           '^/api': '',
