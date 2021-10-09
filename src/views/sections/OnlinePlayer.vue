@@ -43,7 +43,9 @@
           if (newVal.Command) {
             switch (newVal.Command) {
               case 'Login':
-                this.players.push(newVal.Data)
+                if (this.players.findIndex(i => { return i.SteamId === newVal.User.SteamId }) === -1) {
+                  this.players.push(newVal.Data)
+                }
                 break
               case 'logout': {
                 const playerIndex = this.players.findIndex(i => { return i.SteamId === newVal.User })

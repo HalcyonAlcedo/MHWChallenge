@@ -189,7 +189,7 @@
       if (obj['openid.claimed_id']) {
         const steamid = obj['openid.claimed_id'].slice(obj['openid.claimed_id'].lastIndexOf('Fid%2F') + 6)
         this.axios
-          .post('/api', { data: { operation: 'GetUserInfo', steam64: steamid.toString() } })
+          .post('/api/GetUserInfo', { steamId: steamid.toString() })
           .then(response => {
             this.$store.commit('setSteamId', {
               id: steamid,
@@ -209,7 +209,7 @@
         this.$router.push({ query: {} })
       } else if (this.$store.state.steamId !== 0) {
         this.axios
-          .post('/api', { data: { operation: 'GetUserInfo', steam64: this.$store.state.steamId.toString() } })
+          .post('/api/GetUserInfo', { steamId: this.$store.state.steamId.toString() })
           .then(response => {
             this.user = {
               name: response.data.steam.username,
