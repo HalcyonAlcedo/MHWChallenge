@@ -189,7 +189,7 @@
       if (obj['openid.claimed_id']) {
         const steamid = obj['openid.claimed_id'].slice(obj['openid.claimed_id'].lastIndexOf('Fid%2F') + 6)
         this.axios
-          .post('/api/GetUserInfo', { steamId: steamid.toString() })
+          .post('/apiv2/web/GetUserInfo', { steamId: steamid.toString() })
           .then(response => {
             this.$store.commit('setSteamId', {
               id: steamid,
@@ -197,9 +197,9 @@
             })
             this.user = {
               name: response.data.steam.username,
-              storey: response.data.data.storey,
-              challengeCount: response.data.data.challengeCount,
-              death: response.data.data.death,
+              storey: response.data.data.length > 0 ? response.data.data[0].storey : 0,
+              challengeCount: response.data.data.length > 0 ? response.data.data[0].challengeCount : 0,
+              death: response.data.data.length > 0 ? response.data.data[0].death : 0,
               avatar: response.data.steam.avatar,
               vac: response.data.user.vac === 1,
               points: response.data.user.points,
@@ -209,13 +209,13 @@
         this.$router.push({ query: {} })
       } else if (this.$store.state.steamId !== 0) {
         this.axios
-          .post('/api/GetUserInfo', { steamId: this.$store.state.steamId.toString() })
+          .post('/apiv2/web/GetUserInfo', { steamId: this.$store.state.steamId.toString() })
           .then(response => {
             this.user = {
               name: response.data.steam.username,
-              storey: response.data.data.storey,
-              challengeCount: response.data.data.challengeCount,
-              death: response.data.data.death,
+              storey: response.data.data.length > 0 ? response.data.data[0].storey : 0,
+              challengeCount: response.data.data.length > 0 ? response.data.data[0].challengeCount : 0,
+              death: response.data.data.length > 0 ? response.data.data[0].death : 0,
               avatar: response.data.steam.avatar,
               vac: response.data.user.vac === 1,
               points: response.data.user.points,

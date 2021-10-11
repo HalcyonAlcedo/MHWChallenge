@@ -20,8 +20,11 @@ const mutations = {
   SOCKET_RECONNECT_ERROR,
 }
 
-Vue.use(VueNativeSock, 'wss://ws.alcedo.top/wss', {
+Vue.use(VueNativeSock, 'wss://ws.alcedo.top:3000/Api', {
   store: store,
   mutations: mutations,
+  reconnection: true,
+  reconnectionAttempts: 5,
+  reconnectionDelay: 3000,
   format: 'json',
 })

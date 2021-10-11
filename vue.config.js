@@ -2,11 +2,11 @@ module.exports = {
   devServer: {
     disableHostCheck: true,
     proxy: { // 配置跨域
-      '/api': {
-        target: 'http://challenge.alcedo.top/apiv2/web',
+      '/apiv2': {
+        target: 'http://challenge.alcedo.top/apiv2',
         changOrigin: true,
         pathRewrite: {
-          '^/api': '',
+          '^/apiv2': '',
         },
       },
     },

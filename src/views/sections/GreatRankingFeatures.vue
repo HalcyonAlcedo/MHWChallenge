@@ -106,7 +106,7 @@
         return new Promise((resolve, reject) => {
           const { page, itemsPerPage } = this.options
           this.axios
-            .post('/api/GetGreatRanking', { page: page, itemsPerPage: itemsPerPage })
+            .post('/apiv2/web/GetGreatRanking', { page: page, itemsPerPage: itemsPerPage })
             .then(response => {
               const items = []
               const total = response.data.total
@@ -123,7 +123,7 @@
                 if (this.users.findIndex(a => { return a.steam3 === data.steamid }) === -1) {
                   this.users.push({ steam3: data.steamid, avatar: '', profileurl: '' })
                   this.axios
-                    .post('/api/GetUserInfo', { steamId: data.steamid })
+                    .post('/apiv2/web/GetUserInfo', { steamId: data.steamid })
                     .then(userresponse => {
                       this.$set(this.users, this.users.findIndex(a => { return a.steam3 === data.steamid }), userresponse.data.steam)
                     })
